@@ -22,7 +22,8 @@ public class Navigate {
 		this.driver=driver;
 	}
 	
-	public void clickDropdown() {
+	public void clickDropdown() throws InterruptedException {
+		Thread.sleep(3000);
 		driver.findElement(dropdownLocator).click();
 		}
 	
